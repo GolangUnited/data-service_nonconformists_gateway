@@ -1,2 +1,1 @@
-# golang-united-gateway
-Golang United Site
+Go United - API Gateway
