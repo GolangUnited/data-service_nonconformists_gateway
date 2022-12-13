@@ -5,9 +5,19 @@ go 1.19
 require (
 	github.com/deepmap/oapi-codegen v1.12.2
 	github.com/labstack/echo/v4 v4.9.1
+	github.com/spf13/viper v1.14.0
 )
 
 require (
+	github.com/golang/protobuf v1.5.2 // indirect
+	google.golang.org/genproto v0.0.0-20221024183307-1bc688fe9f3e // indirect
+	google.golang.org/grpc v1.51.0 // indirect
+	google.golang.org/protobuf v1.28.1 // indirect
+)
+
+require (
+	github.com/RealJimy/gounited-api/grpc v0.0.0-20221122205522-f5b44f70a14f
+	github.com/RealJimy/utils v1.1.0
 	github.com/apapsch/go-jsonmerge/v2 v2.0.0 // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
@@ -23,7 +33,6 @@ require (
 	github.com/spf13/cast v1.5.0 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
-	github.com/spf13/viper v1.14.0 // indirect
 	github.com/subosito/gotenv v1.4.1 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v1.2.2 // indirect

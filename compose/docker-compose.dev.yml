@@ -1,0 +1,25 @@
+version: "3"
+services:
+  certificates:
+    build:
+      context: https://github.com/IlyaKhalizov/golang-united-certificates.git#dev
+    image: certs
+    ports:
+      - "8181:8181"
+    environment:
+      CERTMGR_PORT: 8181
+      CERTMGR_CONNECTIONSTRING: "host=database user=postgres password=devpass dbname=devdb port=5432"
+    depends_on:
+      database:
+        condition: service_healthy
+  database:
+    image: postgres:alpine
+    environment:
+      POSTGRES_PASSWORD: devpass
+      POSTGRES_DB: devdb
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 30s

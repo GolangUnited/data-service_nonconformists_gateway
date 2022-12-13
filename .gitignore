@@ -1,1 +1,3 @@
 config.yaml
+swagger-codegen.sh
+docker-entrypoint.sh
